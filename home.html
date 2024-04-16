@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240416141705">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-lp>
+			<div class="header__container">
+				<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Компанія</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Продукція</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Статті</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Рішення</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__action action-header">
+					<!-- data-popup="#form" -->
+					<a data-da=".menu__body,767.98" href="tel:0800000000" class="action-header__link">0 (800) 00-00-00</a>
+					<button data-popup="#form" type="button" class="action-header__button button">
+						Зв’язатись
+					</button>
+					<div data-da=".menu__body,767.98" class="action-header__languages">
+						<a href="#" class="action-header__type _active">ua</a>
+						<a href="#" class="action-header__type">ru</a>
+					</div>
+					<button type="button" class="action-header__icon icon-menu"></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<!-- Оболонка слайдера -->
+					<div class="main__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="main__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="main__slide swiper-slide">
+								<div class="main__about">
+									<h2 class="main__ttl" lang="en">
+										Meltem
+									</h2>
+									<div class="main__text">
+										<p>
+											Meltem – це гарантовано якісне
+											вентиляційне обладнання від
+											німецького заводу.
+										</p>
+									</div>
+									<a href="#" class="main__button button">
+										Продукція
+									</a>
+								</div>
+								<div class="main__img">
+									<img src="img/main/image_01.webp" alt="picture" />
+								</div>
+								<div class="main__end">
+									<div class="main__text-second">
+										<p>
+											Відцентровий витяжний вентилятор
+										</p>
+										<p>Meltem V-II 30-N</p>
+									</div>
+
+									<a data-popup="#thanks" href="#" class="main__button-transp button-transp">Детальніше</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="main__slide swiper-slide">
+								<div class="main__about">
+									<h2 class="main__ttl" lang="en">
+										Meltem
+									</h2>
+									<div class="main__text">
+										<p>
+											Meltem – це гарантовано якісне
+											вентиляційне обладнання від
+											німецького заводу.
+										</p>
+									</div>
+									<a href="#" class="main__button button">
+										Продукція
+									</a>
+								</div>
+								<div class="main__img">
+									<img src="img/main/image_01.webp" alt="picture" />
+								</div>
+								<div class="main__end">
+									<div class="main__text-second">
+										<p>
+											Відцентровий витяжний вентилятор
+										</p>
+										<p>Meltem V-II 30-N</p>
+									</div>
+
+									<a href="#" class="main__button-transp button-transp">Детальніше</a>
+								</div>
+							</div>
+						</div>
+						<div class="main__swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="https://unpkg.com/imask?_v=20240416141705"></script>
+	</div>
+	<div id="form" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__header">
+					<h3>Залишайте заявку</h3>
+					<p>Ми зв’яжемося з вами найближчим часом.</p>
+				</div>
+				<form action="#" method="POST" class="popup__form">
+					<div class="popup__line">
+						<input type="text" name="name" placeholder="Ваше ім’я*" class="input" autocomplete="off" required />
+					</div>
+					<div class="popup__line popup__line--mask">
+						<i>
+							<img src="img/form/flag.svg" alt="flag" />
+						</i>
+						<input type="tel" name="phone" id="phone" placeholder="+380-00-000-00-00*" class="input" autocomplete="off" required />
+					</div>
+					<button type="submit" class="popup__button button">
+						Відправить
+					</button>
+				</form>
+				<div class="popup__text">
+					<p>
+						Натискаючи кнопку “Надіслати”, ви погоджуєтесь з
+						<a href="#">Правилами обробки персональних даних</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="thanks" aria-hidden="true" class="popup popup-thansk">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__quality">
+					<img src="img/form/quality.svg" alt="ckeck icon" />
+				</div>
+				<div class="popup__header">
+					<h3>Дякуємо за заявку!</h3>
+					<p>Ваші дані успішно надіслані!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240416141705"></script>
+</body>
+
+</html>
